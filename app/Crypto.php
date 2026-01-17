@@ -16,7 +16,7 @@ class Crypto {
         // Read the file content
         $data = file_get_contents($sourcePath);
         if ($data === false) {
-            throw new Exception("Could not read input file.");
+            throw new Exception("Gagal membaca file input.");
         }
 
         // Hash the key to ensure 256-bit length
@@ -31,7 +31,7 @@ class Crypto {
         $encrypted = openssl_encrypt($data, self::METHOD, $keyHash, OPENSSL_RAW_DATA, $iv);
 
         if ($encrypted === false) {
-            throw new Exception("Encryption failed: " . openssl_error_string());
+            throw new Exception("Enkripsi gagal: " . openssl_error_string());
         }
 
         // Combine IV and Encrypted data (IV is needed for decryption)
@@ -39,7 +39,7 @@ class Crypto {
 
         // Write to destination
         if (file_put_contents($destPath, $result) === false) {
-             throw new Exception("Could not write output file.");
+             throw new Exception("Gagal menulis file output.");
         }
 
         return true;
@@ -58,7 +58,7 @@ class Crypto {
         // Read the file content
         $data = file_get_contents($sourcePath);
         if ($data === false) {
-             throw new Exception("Could not read input file.");
+             throw new Exception("Gagal membaca file input.");
         }
 
         $keyHash = hash('sha256', $key, true);
@@ -83,7 +83,7 @@ class Crypto {
 
         // Write to destination
         if (file_put_contents($destPath, $decrypted) === false) {
-             throw new Exception("Could not write output file.");
+             throw new Exception("Gagal menulis file output.");
         }
 
         return true;

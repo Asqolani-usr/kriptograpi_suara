@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Crypto System</title>
+    <title>Sistem Kriptografi Audio</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f4f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
         .container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 400px; }
@@ -23,23 +23,23 @@
         <h2>Audio Crypto</h2>
         <form action="process.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="file">Select Audio File (.wav, .mp3)</label>
+                <label for="file">Pilih File Audio (.wav, .mp3)</label>
                 <input type="file" name="file" id="file" accept=".wav,.mp3,.enc" required>
             </div>
             <div class="form-group">
-                <label for="key">Secret Key</label>
-                <input type="password" name="key" id="key" placeholder="Enter your secret key" required>
+                <label for="key">Kunci Rahasia</label>
+                <input type="password" name="key" id="key" placeholder="Masukkan kunci rahasia Anda" required>
             </div>
             <div class="form-group">
-                <label>Action</label>
+                <label>Aksi</label>
                 <div class="radio-group">
-                    <label><input type="radio" name="action" value="encrypt" checked> Encrypt</label>
-                    <label><input type="radio" name="action" value="decrypt"> Decrypt</label>
+                    <label><input type="radio" name="action" value="encrypt" checked> Enkripsi</label>
+                    <label><input type="radio" name="action" value="decrypt"> Dekripsi</label>
                 </div>
             </div>
-            <button type="submit" class="btn">Process</button>
+            <button type="submit" class="btn">Proses</button>
         </form>
-        <div class="note">Algorithm: AES-256-CBC</div>
+        <div class="note">Algoritma: AES-256-CBC</div>
     </div>
 </body>
 </html>
