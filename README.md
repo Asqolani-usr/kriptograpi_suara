@@ -59,3 +59,4 @@ Aplikasi ini tidak memerlukan konfigurasi server yang rumit (seperti Apache/Ngin
     *   `uploads/`: Folder sementara untuk file yang diunggah.
     *   `processed/`: Folder sementara untuk hasil enkripsi/dekripsi.
 *   `ANALYSIS.md`: Penjelasan teknis, flowchart, dan analisis keamanan.
+*   `verify_algo.py`: Script Python independen untuk memverifikasi logika algoritma. Script ini mensimulasikan proses enkripsi dan dekripsi yang dilakukan oleh aplikasi PHP (AES-256-CBC, Hashing Kunci, dan penanganan IV) untuk memastikan bahwa logika matematika yang digunakan benar dan hasilnya dapat dikembalikan ke bentuk semula (*reversible*). Ini berguna sebagai bukti validasi (proof of concept) untuk pengujian.
