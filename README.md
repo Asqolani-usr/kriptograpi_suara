@@ -41,7 +41,8 @@ Aplikasi ini tidak memerlukan konfigurasi server yang rumit (seperti Apache/Ngin
 2.  Pada kolom **"Kunci Rahasia"**, masukkan password yang ingin Anda gunakan. **Ingat password ini!** Tanpa password ini, file tidak bisa dikembalikan.
 3.  Pastikan pilihan **"Enkripsi"** terpilih.
 4.  Klik tombol **"Proses"**.
-5.  File hasil enkripsi (berakhiran `.enc`) akan otomatis terunduh. File ini sekarang aman dan tidak bisa diputar.
+5.  File hasil enkripsi (berakhiran `.enc`) akan otomatis terunduh.
+    > **Catatan:** File `.enc` ini adalah file audio yang sudah diacak secara matematis. Anda **TIDAK BISA** membukanya langsung dengan pemutar musik (seperti VLC, Media Player, dll) karena formatnya sudah bukan audio lagi. Untuk mendengarkannya kembali, Anda wajib melakukan proses **Dekripsi** di bawah ini.
 
 ### 2. Dekripsi (Mengembalikan File)
 1.  Klik **"Choose File"** dan pilih file yang sudah dienkripsi sebelumnya (file `.enc`).
